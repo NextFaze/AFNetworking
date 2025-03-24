@@ -31,7 +31,8 @@ EOS
   s.osx.deployment_target = '10.9'
   s.watchos.deployment_target = '2.0'
   s.tvos.deployment_target = '9.0'
-  
+  s.resource_bundles = {'AFNetworking' => ['AFNetworking/PrivacyInfo.xcprivacy']}
+
   s.subspec 'Serialization' do |ss|
     ss.source_files = 'AFNetworking/AFURL{Request,Response}Serialization.{h,m}'
     ss.public_header_files = 'AFNetworking/AFURL{Request,Response}Serialization.h'
